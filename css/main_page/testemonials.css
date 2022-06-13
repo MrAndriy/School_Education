@@ -1,0 +1,49 @@
+.testimonial__container {
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 6em;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+
+.testimonial__info {
+  text-align: center;
+}
+
+.testemonial__body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 2.5rem;
+  position: relative;
+  border-radius: 50%;
+}
+
+.testemonial__body::before {
+  content: '';
+  display: block;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary)
+  );
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 45%;
+  top: -1.1rem;
+  transform: rotate(45deg);
+}
